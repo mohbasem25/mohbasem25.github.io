@@ -239,8 +239,8 @@
       <p class="section-kicker">04 · Open-Source QA Projects</p>
       <h2>Code you can actually run.</h2>
       <p class="section-sub">
-        Four self-contained repos demonstrating manual and automated testing across the layers a payments
-        QA engineer touches daily — UI, mobile, API, and structured manual test design.
+        Seven self-contained repos demonstrating manual and automated testing across the layers a payments
+        QA engineer touches daily — UI, mobile, API, performance, security, and structured manual test design.
       </p>
     </div>
     <div class="cards oss-cards">
@@ -303,6 +303,51 @@
           <li>Payment, merchant, and wallet (P2P/bill-pay) scope</li>
         </ul>
         <a class="card-link" href="https://github.com/mohbasem25/qa-manual-testing" target="_blank" rel="noopener">View on GitHub →</a>
+      </article>
+
+      <article class="card">
+        <span class="card-tag">Payment Gateway Testing</span>
+        <h3>qa-payment-gateway-stripe</h3>
+        <p>
+          REST Assured + TestNG and Postman/Newman against Stripe's real test-mode API — 30 tests covering
+          payment intents, refunds, decline scenarios, idempotency, and the 3D Secure automation boundary.
+        </p>
+        <ul class="card-meta">
+          <li>Real sandbox, not a fictional mock</li>
+          <li>Idempotency-key and decline-code coverage</li>
+          <li>Dual REST Assured + Postman tracks</li>
+        </ul>
+        <a class="card-link" href="https://github.com/mohbasem25/qa-payment-gateway-stripe" target="_blank" rel="noopener">View on GitHub →</a>
+      </article>
+
+      <article class="card">
+        <span class="card-tag">Performance Testing</span>
+        <h3>qa-performance-testing</h3>
+        <p>
+          k6 + JMeter load testing against a self-contained mock payment service — baseline, spike, soak, and
+          a concurrent-refund race-condition check. Every number in the README is a real local-run result.
+        </p>
+        <ul class="card-meta">
+          <li>Backs ISTQB CT-PT certification with real proof</li>
+          <li>p95 latency, error-rate, and degradation gates</li>
+          <li>Verified race-safe refund handling</li>
+        </ul>
+        <a class="card-link" href="https://github.com/mohbasem25/qa-performance-testing" target="_blank" rel="noopener">View on GitHub →</a>
+      </article>
+
+      <article class="card">
+        <span class="card-tag">Security Testing</span>
+        <h3>qa-payment-security-testing</h3>
+        <p>
+          OWASP API Security Top 10 applied to a payment API. An intentionally vulnerable mock service plus a
+          dual Python/pytest + Postman suite that independently confirms 5 real, exploitable findings.
+        </p>
+        <ul class="card-meta">
+          <li>BOLA/IDOR, broken auth, data exposure, injection, forged webhooks</li>
+          <li>Professional findings report + before/after fixes</li>
+          <li>Every finding independently verified, not simulated</li>
+        </ul>
+        <a class="card-link" href="https://github.com/mohbasem25/qa-payment-security-testing" target="_blank" rel="noopener">View on GitHub →</a>
       </article>
     </div>
   </section>
