@@ -239,8 +239,9 @@
       <p class="section-kicker">04 · Open-Source QA Projects</p>
       <h2>Code you can actually run.</h2>
       <p class="section-sub">
-        Seven self-contained repos demonstrating manual and automated testing across the layers a payments
-        QA engineer touches daily — UI, mobile, API, performance, security, and structured manual test design.
+        Nine self-contained repos demonstrating manual and automated testing across the layers a payments and
+        AI/ML QA engineer touches daily — UI, mobile, API, performance, security, ML model evaluation, LLM
+        testing, and structured manual test design.
       </p>
     </div>
     <div class="cards oss-cards">
@@ -348,6 +349,36 @@
           <li>Every finding independently verified, not simulated</li>
         </ul>
         <a class="card-link" href="https://github.com/mohbasem25/qa-payment-security-testing" target="_blank" rel="noopener">View on GitHub →</a>
+      </article>
+
+      <article class="card">
+        <span class="card-tag">ML Model Evaluation</span>
+        <h3>qa-ml-model-evaluation-testing</h3>
+        <p>
+          Precision/recall/F1 benchmarking of a real Hugging Face sentiment model across 74 hand-curated cases,
+          plus adversarial/robustness and directional fairness-probe testing.
+        </p>
+        <ul class="card-meta">
+          <li>81.8% overall accuracy — real measured result</li>
+          <li>Sarcasm accuracy drops to 25% (honest finding, not hidden)</li>
+          <li>70% robustness under typo/emoji perturbation</li>
+        </ul>
+        <a class="card-link" href="https://github.com/mohbasem25/qa-ml-model-evaluation-testing" target="_blank" rel="noopener">View on GitHub →</a>
+      </article>
+
+      <article class="card">
+        <span class="card-tag">LLM / GenAI Testing</span>
+        <h3>qa-llm-testing-framework</h3>
+        <p>
+          Consistency, structured-output validation, prompt-injection resistance, hallucination spot-checks, and
+          refusal-boundary testing against a deterministic mock LLM with real, seeded findings.
+        </p>
+        <ul class="card-meta">
+          <li>5 findings independently verified via actual test runs</li>
+          <li>10/10 prompt-injection payloads bypass a naive system prompt</li>
+          <li>Pluggable to real Anthropic/OpenAI backends</li>
+        </ul>
+        <a class="card-link" href="https://github.com/mohbasem25/qa-llm-testing-framework" target="_blank" rel="noopener">View on GitHub →</a>
       </article>
     </div>
   </section>
