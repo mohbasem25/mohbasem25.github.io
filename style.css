@@ -147,8 +147,31 @@ a { color: inherit; text-decoration: none; }
 .job-tags span { background: var(--bg-elev); border: 1px solid var(--border); padding: 5px 11px; border-radius: 999px; font-size: 0.78rem; color: var(--text-dim); }
 
 /* Videos */
+.videos-featured {
+  border: 1px solid color-mix(in srgb, var(--accent) 35%, var(--border));
+  border-radius: var(--radius);
+  background:
+    radial-gradient(circle at 15% 0%, color-mix(in srgb, var(--accent) 10%, transparent), transparent 55%),
+    var(--bg-elev);
+  padding: 56px 40px;
+  margin-top: 12px;
+}
+.videos-featured .section-kicker { color: var(--accent); }
 .video-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; }
-.video-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column; }
+.video-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+}
+.video-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+  box-shadow: 0 12px 32px -12px color-mix(in srgb, var(--accent) 45%, transparent);
+}
 .video-card video { width: 100%; aspect-ratio: 16 / 9; background: #000; display: block; }
 .video-card h3 { margin: 16px 20px 6px; font-size: 1.02rem; letter-spacing: -0.01em; }
 .video-card p { margin: 0 20px 20px; color: var(--text-dim); font-size: 0.88rem; }
@@ -200,6 +223,7 @@ a { color: inherit; text-decoration: none; }
   .hero-stats { grid-template-columns: repeat(2, 1fr); }
   .about-grid { grid-template-columns: 1fr; }
   .job { grid-template-columns: 1fr; }
+  .videos-featured { padding: 40px 20px; }
 }
 @media (max-width: 480px) {
   .hero-stats { grid-template-columns: 1fr; }
